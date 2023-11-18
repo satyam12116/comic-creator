@@ -13,7 +13,7 @@ export class ComicServiceService {
 
   generateComic(text: string): Observable<any> {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${this.apiKey}`);
-    const body = {"inputs": "Astronaut riding a horse" };
+    const body = {"inputs": text };
 
     return this.http.post(this.apiUrl, body, { headers }).pipe(
       catchError((error) => {
