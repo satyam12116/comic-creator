@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-comic-display',
   templateUrl: './comic-display.component.html',
-  styleUrls: ['./comic-display.component.css'],
+  styleUrls: ['./comic-display.component.scss'],
 })
 export class ComicDisplayComponent {
   @Input() comicPanels!: string[]; // Assuming each panel is a string
